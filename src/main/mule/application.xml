@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="mulesoft-helow-worldFlow" doc:id="e40ec621-6719-4c18-90ad-703d581eaa5a" >
-		<http:listener doc:name="Listener" doc:id="6aa4b234-ac62-43f5-901d-101f741a7f40" config-ref="HTTP_Listener_config" path="/test"/>
+		<http:listener doc:name="Listener" doc:id="6aa4b234-ac62-43f5-901d-101f741a7f40" config-ref="HTTP_Listener_config" path="/helo-world"/>
 		<logger level="INFO" doc:name="Logger" doc:id="9b73e2d1-b347-4fd7-8989-f87df24832a9" message='"helo mulesoft"'/>
 	</flow>
 </mule>
